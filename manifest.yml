@@ -1,3 +1,4 @@
+---
 applications:
   - name: senpai-watson-app-dev
     memory: 64M
