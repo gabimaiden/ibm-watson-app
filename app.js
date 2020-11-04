@@ -1,20 +1,10 @@
 const { response } = require('express');
 const express = require('express');
-import DiscoveryV1 from 'ibm-watson/discovery/v1';
-import { IamAuthenticator } from 'ibm-watson/auth';
 
 const app = express()
 
-app.get('/', (req, res) => {
-    // const data = await processData();
-    res.send('Foo');
-});
+const routes = require('./routes/routes')
 
-let connect = () => {
-    const discoveryClient = new DiscoveryV1({
-        authenticator: new IamAuthenticator({ apikey: '{apikey}' }),
-        version: '{version}',
-    });
-}
+app.use('/api/v1', routes);
 
 module.exports = app;
