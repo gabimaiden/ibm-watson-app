@@ -1,0 +1,16 @@
+applications:
+  - name: senpai-watson-app-dev
+    memory: 64M
+    instances: 1
+    env:
+      - API_KEY: 'gCQLuOiGuUT3xSvZ6I7wT6Dr7_TKMKfstpGVz-AlmEsj'
+  - name: senpai-watson-app-test
+    memory: 64M
+    instances: 1
+    env:
+      - API_KEY: 'gCQLuOiGuUT3xSvZ6I7wT6Dr7_TKMKfstpGVz-AlmEsj'
+  - name: senpai-watson-app-prod
+    memory: 256M
+    instances: 1
+    env:
+      - API_KEY: 'gCQLuOiGuUT3xSvZ6I7wT6Dr7_TKMKfstpGVz-AlmEsj'
